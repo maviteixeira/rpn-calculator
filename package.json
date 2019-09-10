@@ -1,0 +1,19 @@
+{
+  "name": "rpn-calculator",
+  "version": "1.0.0",
+  "description": "A rpn calculator in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maviteixeira/rpn-calculator.git"
+  },
+  "author": "maviteixeira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maviteixeira/rpn-calculator/issues"
+  },
+  "homepage": "https://github.com/maviteixeira/rpn-calculator#readme"
+}
