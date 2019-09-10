@@ -4,7 +4,8 @@
   "description": "A rpn calculator in javascript",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/maviteixeira/rpn-calculator/issues"
   },
-  "homepage": "https://github.com/maviteixeira/rpn-calculator#readme"
+  "homepage": "https://github.com/maviteixeira/rpn-calculator#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
