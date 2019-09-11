@@ -5,14 +5,14 @@ const expression = function Expression(expression = '', separator = ' ') {
     let index = 0
 
     return {
-        next: function () {
-            if (!this.finished()) {
-                let current = chars[index]
+        nextTerm: function () {
+            if (!this.isFinished()) {
+                let term = Term(chars[index])
                 index++
-                return Term(current)
+                return term
             }
         },
-        finished: function () {
+        isFinished: function () {
             return index === chars.length
         }
     }

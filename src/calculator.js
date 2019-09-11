@@ -2,8 +2,8 @@ const calculator = function Calculator() {
     return {
         calculate: function (expression) {
             let stack = []
-            while (!expression.finished()) {
-                let term = expression.next()
+            while (!expression.isFinished()) {
+                let term = expression.nextTerm()
                 if (term.isOperator()) {
                     let operation = term.asOperation()
                     let second = parseInt(stack.pop())
