@@ -1,3 +1,8 @@
+const Sum = require('./sum')
+const Minus = require('./minus')
+const Multiply = require('./multiply')
+const Divide = require('./divide')
+
 const term = function Term(value) {
     const operators = ['+', '-', '*', '/']
 
@@ -11,21 +16,13 @@ const term = function Term(value) {
         asOperation() {
             switch (value) {
                 case '+':
-                    return function (firstOperand, secondOperand) {
-                        return firstOperand + secondOperand
-                    }
+                    return Sum()
                 case '-':
-                    return function (firstOperand, secondOperand) {
-                        return firstOperand - secondOperand
-                    }
+                    return Minus()
                 case '*':
-                    return function (firstOperand, secondOperand) {
-                        return firstOperand * secondOperand
-                    }
+                    return Multiply()
                 case '/':
-                    return function (firstOperand, secondOperand) {
-                        return firstOperand / secondOperand
-                    }
+                    return Divide()
                 default:
                     console.log('Sorry, invalid operator ' + operator + ' .');
             }

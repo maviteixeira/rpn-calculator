@@ -6,9 +6,9 @@ const calculator = function Calculator() {
                 let term = expression.next()
                 if (term.isOperator()) {
                     let operation = term.asOperation()
-                    let a = parseInt(stack.pop())
-                    let b = parseInt(stack.pop())
-                    let result = operation(b, a)
+                    let second = parseInt(stack.pop())
+                    let first = parseInt(stack.pop())
+                    let result = operation.computate(first, second)
                     stack.push(result)
                 } else {
                     stack.push(term.asInt())
