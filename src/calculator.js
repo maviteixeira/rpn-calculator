@@ -1,7 +1,6 @@
 const calculator = function Calculator() {
     return {
-        calculate: function (expression) {
-            let stack = []
+        calculate: function (expression, stack = []) {
             while (!expression.isFinished()) {
                 let term = expression.nextTerm()
                 if (term.isOperator()) {
