@@ -1,15 +1,18 @@
-const expression = function Expression(expression) {
-    const chars = expression.split(' ')
+const Term = require('./term')
+
+const expression = function Expression(expression = '', separator = ' ') {
+    const chars = expression.length === 0 ? [] : expression.split(separator)
     let index = 0
+
     return {
-        next: function(){
-            if(!this.finished()){
+        next: function () {
+            if (!this.finished()) {
                 let current = chars[index]
                 index++
-                return current
+                return Term(current)
             }
         },
-        finished: function(){
+        finished: function () {
             return index === chars.length
         }
     }
