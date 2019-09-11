@@ -20,24 +20,24 @@ test('should be an number', () => {
 
 test('should return add operation', () => {
     expect(
-        Term('+').asOperation()(1, 1)
+        Term('+').asOperation().computate(1, 1)
     ).toBe(2)
 })
 
 test('should return a minus operation', () => {
     expect(
-        Term('-').asOperation()(4, 1)
+        Term('-').asOperation().computate(4, 1)
     ).toBe(3)
 })
 
 test('should return a multiply operation', () => {
     expect(
-        Term('*').asOperation()(3, 4)
+        Term('*').asOperation().computate(3, 4)
     ).toBe(12)
 })
 
 test('should return a divide operation', () => {
     expect(
-        Term('/').asOperation()(4, 2)
+        Term('/').asOperation().computate(4, 2)
     ).toBe(2)
 })
