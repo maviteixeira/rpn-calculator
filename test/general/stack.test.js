@@ -1,4 +1,4 @@
-const Stack = require('./../src/stack')
+const Stack = require('./../../src/general/stack')
 
 
 test('should push an value', () => {
