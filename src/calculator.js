@@ -27,12 +27,9 @@ const calculator = function Calculator() {
 
     return {
         calculate: function (expression) {
-            let finished = true
-            let index = 0
-            let chars = expression.split(' ')
             let stack = []
-            while (finished) {
-                let current = chars[index]
+            while (!expression.finished()) {
+                let current = expression.next()
                 if(operators.indexOf(current) != -1){
                     let func = operation(current)
                     let a = parseInt(stack.pop())
@@ -42,9 +39,6 @@ const calculator = function Calculator() {
                 } else {
                     stack.push(current)
                 }
-                if (index === chars.length-1)
-                    finished = false
-                index++
             }
             return stack.pop()
         }
