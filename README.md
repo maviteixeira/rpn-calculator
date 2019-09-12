@@ -13,6 +13,6 @@ In order to run the tests run the command:
 
 To calculate you should use the follow command adding a String with the expression separating each number and operator using a space:
 
-``$npm run``
+``$npm run "1 2 +"`` that would be equal 3
 
-``$npm run "1 2 +"`` == 3
+``$npm run "2 5 * 4 + 3 2 * 1 + /"`` that would be equal 2
