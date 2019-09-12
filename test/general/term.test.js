@@ -1,4 +1,4 @@
-const Term = require('./../../src/general/term')
+const Term = require('src/general/term')
 
 test('should be operator', () => {
     expect(

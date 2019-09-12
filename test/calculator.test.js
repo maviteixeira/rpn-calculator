@@ -1,6 +1,6 @@
-const Calculator = require('./../src/calculator')
-const Expression = require('./../src/general/expression')
-const Stack = require('./../src/general/stack')
+const Calculator = require('src/calculator')
+const Expression = require('src/general/expression')
+const Stack = require('src/general/stack')
 
 test('adds 1 + 2 to equal 3', () => {
     expect(

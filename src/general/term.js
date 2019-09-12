@@ -1,7 +1,7 @@
-const Sum = require('./../operations/sum')
-const Minus = require('./../operations/minus')
-const Multiply = require('./../operations/multiply')
-const Divide = require('./../operations/divide')
+const Sum = require('src/operations/sum')
+const Minus = require('src/operations/minus')
+const Multiply = require('src/operations/multiply')
+const Divide = require('src/operations/divide')
 
 const term = function Term(value) {
     const operators = ['+', '-', '*', '/']

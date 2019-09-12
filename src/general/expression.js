@@ -1,4 +1,4 @@
-const Term = require('./term')
+const Term = require('src/general/term')
 
 const expression = function Expression(expression = '', separator = ' ') {
     const chars = expression.length === 0 ? [] : expression.split(separator)

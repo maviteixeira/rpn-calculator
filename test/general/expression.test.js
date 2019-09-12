@@ -1,4 +1,4 @@
-const Expression = require('./../../src/general/expression')
+const Expression = require('src/general/expression')
 
 test('expression should not be isFinished', () => {
     expect(
